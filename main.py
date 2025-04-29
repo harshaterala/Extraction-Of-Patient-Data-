@@ -12,7 +12,8 @@ app = FastAPI()
 async def get_lab_tests(file: UploadFile = File(...)):
     try:
         image = Image.open(file.file)
-        text = pytesseract.image_to_string(image)
+        text = pytesseract.image_to_string(image, config='--psm 4')  
+
 
         lab_data = parse_lab_report_text(text)
 
