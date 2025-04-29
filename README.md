@@ -1,6 +1,27 @@
 # Extraction-Of-Patient-Data
 This project extracts the patent data from the medical reports or forms.
 
+ Lab Report Parser using OCR + Python
+
+This project extracts structured medical lab test results from scanned image reports (PNG/JPG) using OCR (Tesseract) and custom parsing logic.
+
+Features
+
+- Parses common test reports (tabular or plain text)
+- Supports values, units, and reference ranges
+- Detects **out-of-range results**
+- Flask API endpoint for easy use
+
+
+
+Run locally:
+```bash
+git clone https://github.com/harshaterala/Extraction-Of-Patient-Data-.git
+cd lab-report-parser
+pip install -r requirements.txt
+python app.py
+
+
 Sample Output:-
 
 {
